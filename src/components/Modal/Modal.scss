@@ -1,0 +1,70 @@
+@import '../../public/assets/scss/variables.scss';
+
+.modalWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+
+    .modal__content {
+        border-radius: 10px;
+        background-color: $background-light-white;
+        transform: scale(0.5);
+        transition: 0.4s all;
+    }
+
+    .modal__content.active {
+        width: 500px;
+        transform: scale(1);
+    }
+
+    .modalFooter {
+        display: flex;
+        justify-content: flex-end;
+        padding: 13px 30px 13px 0;
+        background-color: $background-light-3;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+
+    .modalHeading {
+        padding: 20px 0 18px 27px;
+        border-radius: 10px 10px 0 0;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.385882px;
+        color: $dark-gray;
+        background-color: $background-light-3;
+    }
+
+    .message {
+        padding: 22px 46px 0 30px;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.313529px;
+        color: $dark-gray;
+    }
+
+    .warningMessage {
+        font-weight: 600;
+        color: $warning;
+    }
+}
+
+.modalWrapper.active {
+    opacity: 1;
+    pointer-events: all;
+}

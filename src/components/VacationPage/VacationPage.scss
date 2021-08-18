@@ -1,0 +1,35 @@
+@import '../../public/assets/scss/variables.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    font-style: normal;
+    color: $text-blue-n2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1184px;
+    margin: auto;
+}
+
+.main {
+    min-height: 100vh;
+    background: $background-light-4;
+
+    .mainWrapper {
+        display: flex;
+        width: 1170px;
+        margin: auto;
+
+        .asideWraper {
+            width: 470px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../../public/assets/scss/variables.scss';
+
+.vacationsCardRoot {
+    width: 675px;
+    height: 100%;
+    margin: 10px;
+    background-color: $background-light-white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(32, 75, 146, 0.15);
+
+    .cardListHeader {
+        height: 65px;
+        padding: 21px 24px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .year {
+        height: 22px;
+        padding: 2px 0 0 30px;
+        background: $blue-accent;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.289412px;
+        color: $text-light-white;
+    }
+
+    .cardWrapper {
+        border-bottom: 1px solid $border-light;
+    }
+
+    .cardWrapper:last-child .vacationCard {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .emptyWrapper {
+        height: 606px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

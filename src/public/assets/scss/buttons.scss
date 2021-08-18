@@ -1,0 +1,38 @@
+@import './variables.scss';
+
+.button {
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.289412px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.button_transparent {
+    background: none;
+    border: none;
+    color: $blue-primary;
+    margin-left: 6px;
+    letter-spacing: 0.01em;
+}
+
+.button_light {
+    background: $background-light-white;
+    border: 1px solid $border-button-1;
+    color: $dark-gray;
+}
+
+.button_dark {
+    background: $blue-accent;
+    border: 1px solid $border-button-2;
+    color: $text-light-white;
+    margin-left: 6px;
+}
+
+.button_small {
+    padding: 8px 38px;
+    margin: 0;
+}

@@ -1,0 +1,110 @@
+@import '../../public/assets/scss/variables.scss';
+
+.header {
+    height: 68px;
+    background-color: $blue-primary;
+    margin: auto;
+    border-bottom: 4px solid $blue-primary-dark;
+
+    .logo {
+        padding-top: 10px;
+    }
+
+    .logoHeading {
+        display: none;
+    }
+
+    .headerWrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 1170px;
+        margin: auto;
+        
+    }
+
+    .headerNavigation {
+        justify-content: space-between;
+        padding: 24px 0 0 5px;
+        font-style: normal;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .navigation {
+        display: flex; 
+        list-style: none;
+    }
+
+    .navigationList a {
+        margin-left: 50px;
+    }
+
+    .navigationItem {
+        color: rgba(246, 248, 253, 0.3);
+    }
+
+    .navigationItem__checked {
+        border-bottom: 4px solid $blue-accent;
+        padding: 0 5px 21px;
+        color: $text-light-white;
+    }
+
+    .sideItems {
+        display: flex;
+    }
+
+    .headerItem {
+        background: $blue-primary-dark;
+        border-radius: 50%;
+        margin-top: 18px;
+        margin-left: 33px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+    }
+
+    .itemImg {
+        margin-top: 7px;
+    }
+
+    .itemImg_message {
+        margin-top: 4px;
+    }
+
+    .header__side-items_personal-info {
+        display: flex;
+        width: 123px;
+        height: 32px;
+        background: $blue-primary-dark;
+        border-radius: 23px;
+        margin: 19px 0 0 15px;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 20px;
+        color: $background-light-white;
+    }
+
+    .personal-name {
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $background-light-white;
+    }
+
+    .personal-mini-avatar {
+        border-radius: 50%;
+        margin: 2px;
+    }
+    
+    .header__side-items_personal-info p{
+        padding: 5px 0 0 8px;
+    }
+
+}
+
+.dawn-line-dark {
+    margin: auto;   
+    height: 4px;
+    background-color: $blue-primary-dark;
+}

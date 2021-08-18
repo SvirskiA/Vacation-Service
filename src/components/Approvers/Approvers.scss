@@ -1,0 +1,46 @@
+@import '../../public/assets/scss/variables.scss';
+
+.approversWrapper {
+    border-top: 1px solid $background-light-2;
+
+    .approversHeading {
+        padding: 20px 0 10px 21px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.289412px;
+        text-transform: uppercase;
+        color: $text-blue-nA;
+    }
+
+    .approver {
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    .textData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .approverName {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.313529px;
+        text-decoration-line: underline;
+    }
+
+    .approverComment {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: -0.289412px;
+    }
+
+    .approverImg {
+        padding: 0 15px 0 21px;
+    }
+}

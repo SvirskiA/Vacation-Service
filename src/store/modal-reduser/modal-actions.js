@@ -1,0 +1,2 @@
+export const SET_MODAL_STATUS = 'SET_MODAL_STATUS';
+export const SET_MODAL_BODY = 'SET_MODAL_BODY';
